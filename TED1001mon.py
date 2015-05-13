@@ -68,28 +68,28 @@ DATA_PTS    = 60
 UPDATE_INT  = 1 #seconds
 #Bidgely
 HOST        = "http://api.bidgely.com"
-API_URL     = "v1/users/270b741a-a3d4-4f4b-82d0-34ff9ac4fbbb/homes/1/gateways/7/upload"
+API_URL     = "v1/users/YOUR_API_KEY/homes/1/gateways/7/upload"
 #PlotWatt
-METER_ID="1018143"
-API_KEY="ZWNlZDhmODIxMWU5"
+METER_ID="YOUR_METER_ID"
+API_KEY="YOUR_API_KEY"
 URL="http://plotwatt.com/api/v2/push_readings"
 #WattVision
 _WV_ELEC_URL_  = "http://www.wattvision.com/api/v0.2/elec/"
-_WV_API_ID_  = 'cstyf3y5slre919lb3h1mv7v6cgxfm4z'
-_WV_API_KEY_ = 'inhx1r6qwau2vonc0yfrxgthvwvtdol6'
-_SENSOR_ID_  = '20659802'
+_WV_API_ID_  = 'YOUR API ID'
+_WV_API_KEY_ = 'YOUR API KEY'
+_SENSOR_ID_  = 'YOUR SENSOR ID'
 #Phant online sensor database
-# server="http://data.sparkfun.com/input/"
-server='http://localhost:8080/input/'
-publicKey='zVMEg0Ne2LhZwNEX66NPcKkPE922'
-privateKey='55XOzAwN2KcXZ4NDLL42cOpg8jAA'
-#CSV file 
+server="http://data.sparkfun.com/input/"
+# server='http://localhost:8080/input/' for those of you who install locally ;-)
+publicKey='YOUR PUBLIC KEY'
+privateKey='YOUR PRIVATE KEY'
+#CSV file (currently linux format)
 CSV_PATH = '/opt/powerData/'
 CSV_PREFIX = 'powerDat'
 # Mysql parameters
 DBHOST  = "localhost"
-DBUSER  = "sensor_user"
-DBPASS  = "jake"
+DBUSER  = "username"
+DBPASS  = "password"
 
 class ProtocolError(Exception):
     pass
